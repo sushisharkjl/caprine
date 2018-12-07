@@ -15,6 +15,8 @@
 	--list-header-color: #222;
 	--blue: #0084ff;
 	--white: #fff;
+    --font-family: "IBM Plex Sans";
+    --webkit-font-smoothing: antialiased;
 }
 
 html.dark-mode body {
@@ -42,6 +44,16 @@ html.dark-mode ._o46:not(._nd_) ._hh7 {
 /* Message list: remove background if emoji */
 html.dark-mode ._hh7._2f5r {
 	background: none !important;
+}
+
+/* Message list: remove border from messages */
+._hh7._aol {
+	border-color: transparent !important;
+}
+
+/* Fix dark mode overriding colors for code snippets */
+html.dark-mode ._wu0 {
+	color: var(--base);
 }
 
 /* Message list: link in your message bubble */
